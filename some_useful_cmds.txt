@@ -1,6 +1,9 @@
+For Directories
+Ctrl + Alt + T	-splits dir
+Ctrl+h		-to show the hidden files.
 
 
-For Terminal:
+For terminal
 Ctrl+A		-Jump to the beginning of the command line.
 Ctrl+E		-Jump to the end of the command line.
 Ctrl+U		-Clear from the cursor to the beginning of the command line.
@@ -12,3 +15,23 @@ xdg-open	-you know
 cmd1 ; cmd2	-cmd1 output cmd2 output.
 passwd		-to change the password.
 rm -r		-to delete dir with contents.
+file (location)	-specifies file type.
+wc		-to print all data.
+wc -l -w -c	-counts lines(-l), words(-w), and characters(-c) in a file.
+history		-summary of the commands you have used till now in the terminal till date.
+ls /usr
+^usr^tmp	-it tells that replace usr with tmp.
+!!		-repeat the previous cmd.
+Esc .		-prints previous cmd in your terminal.
+ctrl+r		-reverse search mode.
+whereis file	-will print exact location of the file.
+env 		-to check which are all declared variables in the system.
+unset		-to clear the set variable.
+
+
+/usr/bin/nano ~/.bashrc	-If somehow you entered wrong path and any of the cmds don't work the this will come handy which i the absolute locations of files you need to edit.
+man usage guide
+man -k cmd	-checks and gives section wise result for the cmds.
+man -K cmd	-it will traverse through each man page of cmd recursively.
+< 1 | 2 >	-if in man page the cmd is separated by pipe(|) then you can use either cmd '1' or cmd '2'.
+[ ]		-the square indicates that the argument is optional
