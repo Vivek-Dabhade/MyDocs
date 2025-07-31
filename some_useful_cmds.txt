@@ -1,10 +1,10 @@
-For Directories
+*For Directories
 Ctrl + Alt + T	-splits dir
 Ctrl+h		-to show the hidden files.
 
 
 
-For terminal
+*For terminal
 Ctrl+A		-Jump to the beginning of the command line.
 Ctrl+E		-Jump to the end of the command line.
 Ctrl+U		-Clear from the cursor to the beginning of the command line.
@@ -31,7 +31,8 @@ unset		-to clear the set variable.
 
 
 /usr/bin/nano ~/.bashrc	-If somehow you entered wrong path and any of the cmds don't work the this will come handy which i the absolute locations of files you need to edit.
-man usage guide
+
+*Man usage guide
 man -k cmd	-checks and gives section wise result for the cmds.
 man -K cmd	-it will traverse through each man page of cmd recursively.
 < 1 | 2 >	-if in man page the cmd is separated by pipe(|) then you can use either cmd '1' or cmd '2'.
