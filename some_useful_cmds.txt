@@ -1,15 +1,10 @@
-<<<<<<< HEAD
-
-
-For Terminal:
-=======
 For Directories
 Ctrl + Alt + T	-splits dir
+Ctrl+h		-to show the hidden files.
 
 
 
 For terminal
->>>>>>> c0e1253 (Adding some more content to the file.)
 Ctrl+A		-Jump to the beginning of the command line.
 Ctrl+E		-Jump to the end of the command line.
 Ctrl+U		-Clear from the cursor to the beginning of the command line.
@@ -21,8 +16,6 @@ xdg-open	-you know
 cmd1 ; cmd2	-cmd1 output cmd2 output.
 passwd		-to change the password.
 rm -r		-to delete dir with contents.
-<<<<<<< HEAD
-=======
 file (location)	-specifies file type.
 wc		-to print all data.
 wc -l -w -c	-counts lines(-l), words(-w), and characters(-c) in a file.
@@ -43,4 +36,13 @@ man -k cmd	-checks and gives section wise result for the cmds.
 man -K cmd	-it will traverse through each man page of cmd recursively.
 < 1 | 2 >	-if in man page the cmd is separated by pipe(|) then you can use either cmd '1' or cmd '2'.
 [ ]		-the square indicates that the argument is optional
->>>>>>> c0e1253 (Adding some more content to the file.)
+/find		-the find word will be highlighted throughout the man page.
+N		-Repeat previous search forward in the man page.
+Shift+N		-Repeat previous search backward in the man page.
+export LESS = '-X'	-allows the man page to stay on terminal instead of clearing it on quit the page.(needs to set for every other terminal.
+man 5 crontab	-to access different section of the man page specify the number first.
+D		-Scroll forward one half-screen.
+U		-Scroll backward one half-screen.
+G		-Go to the start of the man page.
+Shift+G		-Go to the end of the man page.
+
