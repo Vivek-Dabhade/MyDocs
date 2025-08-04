@@ -1,0 +1,6 @@
+nproc:	shows no. of cores present for cpu in the device
+lscpu:	to view specific detais of cpu
+
+
+
+cat /proc/meminfo | grep MemTotal: shows total disks space available.
