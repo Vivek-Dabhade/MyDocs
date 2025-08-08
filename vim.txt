@@ -1,0 +1,33 @@
+hit 'i' and enter to get into insert mode(to add text)
+hit 'esc' to enter into extended command mode 
+hit ':q' to quit the vim
+
+':' initiates the extended cmd mode.
+
+:w dir/name_of_file.txt	- will create the file in that dir.
+
+TEXT EDITOR CMD's       (works in cmd only)
+
+x	-to cut a letter
+yy	-copy's entire line
+p	-paste the text
+dd	-to cut or delete the line
+dw	-to delete a word 
+d$	-deletes from current position of the cursor to the end of the line.
+shift+v	-Selects the entire line
+>	-used to add indentation
+<	-to delete indentation.
+ZZ or :wq-will save and exit (the 'ZZ' must be capital either through caps lock or shift.)
+ctrl+z	-will exit the vim without saving.
+u	-undoes the most recent edit.
+ctrl+r 	-redoes the recent undone text.
+shift+d	-to go to last line of text
+vimtutor-to take lessons on vim
+set nu	-to set number at initial of each line
+#	-will search for occurence of the same word before in the same ext or file.
+
+
+VISUAL MODE: Shift+v
+Visual block: ctrl+v
+
+

@@ -1,0 +1,15 @@
+Adversarial attacks are intentionally carried out on AI systems to accomplish a malicious end goal by taking advantage of AI system vulnerabilities.
+
+
+The adversary attacks the system by adding small changes called perturbations or noise to the input.
+
+
+Although there are different types of adversarial attacks, the possibility of perturbing the input has a higher chance of occurrence. Therefore, based on the initial observation, our AI system can be susceptible to two types of adversarial attacks: poisoning and evasion.
+
+The malicious samples are labeled Disease, but do not actually show disease. When added to the rest of the training data, this results in an AI model that does not produce accurate results.
+In short corrupting the training data is posioning and evasion occurs after the model is deployed and giving it false input 
+Poisoning attacks focus on manipulating the training data used to create the AI model, aiming to corrupt the model's learning process and reduce its accuracy. Evasion attacks, on the other hand, target the AI model during its operational phase, attempting to fool the model by providing subtly manipulated inputs, thus making it misclassify or fail to identify correctly.
+
+
+
+
