@@ -1,3 +1,7 @@
+read -p "-p Allows to add text before variable for better understanding" var
+read -s "-s Slients the input str ****":
+
+				##Conditional Statements##
 if [[ condition ]]
 then
 	do this
