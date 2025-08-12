@@ -15,3 +15,36 @@ if [[ $i == "N" ]] #Note the spaces and square braces are very crucial while goi
 
 
 Note that there must be spaces between the brackets and their enclosing text. An or condition is || and an and condition is &&. Also note that then is required after if and elif but not after else. It must be separated from the conditional by either a newline or a ; which represents a newline to bash. The entire if clause is terminated with fi.
+
+
+					Example
+
+Given three integers (, , and ) representing the three sides of a triangle, identify whether the triangle is scalene, isosceles, or equilateral.
+
+If all three sides are equal, output EQUILATERAL.
+Otherwise, if any two sides are equal, output ISOSCELES.
+Otherwise, output SCALENE.
+
+read x
+read y
+read z
+
+if [[ "$x" -eq "$y" && "$y" == "$z" ]]
+then 
+    echo "EQUILATERAL"
+elif [[ "$x" -eq "$y" || "$y" == "$z" || "$x" == "$z" ]]
+then
+    echo "ISOSCELES"
+else
+    echo "SCALENE"
+fi
+
+Note u cannot compare more than two things at a time to do so add 'and condition' to continue.
+For numeric comparisons, use the [[ ... ]] construct with operators like -eq (equal), -ne (not equal), -gt (greater than), -ge (greater than or equal), -lt (less than), and -le (less than or equal).
+
+For string comparisons, use the [[ ... ]] construct with operators like == (equal), != (not equal), < (less than, lexicographically), and > (greater than, lexicographically). Note that < and > require escaping or using a different context if they are not within [[ ]].
+
+You can combine multiple comparison conditions using logical operators:
+&& and ||
+and [[ ... ]] vs. [ ... ]:
+The [[ ... ]] construct is generally preferred in modern Bash scripting as it offers more features and better handling of whitespace and word splitting compared to the older [ ... ] (test command).
