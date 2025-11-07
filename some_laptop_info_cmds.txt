@@ -4,3 +4,5 @@ lscpu:	to view specific detais of cpu
 
 
 cat /proc/meminfo | grep MemTotal: shows total disks space available.
+find . -type f | xargs file  :basically find in current dir for regular type of file and xargs will bundle it up.
+ls -lhS  :will list with (h) human readable size and (S) will sort it in desending order.
