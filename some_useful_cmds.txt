@@ -1,6 +1,7 @@
 For Directories
 Ctrl + Alt + T	-splits dir
 Ctrl+h		-to show the hidden files.
+sudo dpkg -i package name.deb   -can be useful to install .deb files.
 
 
 
@@ -12,7 +13,7 @@ Ctrl+K		-Clear from the cursor to the end of the command line.
 Ctrl+LeftArrow	-Jump to the beginning of the previous word on the command line.
 Ctrl+RightArrow	-Jump to the end of the next word on the command line.
 Ctrl+R		-Search the history list of commands for a pattern.
-xdg-open	-you know
+xdg-open	-you know to open gui mode of file manager.
 cmd1 ; cmd2	-cmd1 output cmd2 output.
 passwd		-to change the password.
 rm -r		-to delete dir with contents.
