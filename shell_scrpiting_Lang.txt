@@ -1,5 +1,10 @@
 read -p "-p Allows to add text before variable for better understanding" var
 read -s "-s Slients the input str ****":
+read -r	 -raw input to avoid backslash as a special character.
+read -N1 -takes 1 letter as an input.
+cut -c 4 -will index to the 4th character directly.
+
+
 
 				##Conditional Statements##
 if [[ condition ]]
@@ -39,12 +44,14 @@ else
     echo "SCALENE"
 fi
 
-Note u cannot compare more than two things at a time to do so add 'and condition' to continue.
+-Note u cannot compare more than two things at a time to do so add 'and condition' to continue.
 For numeric comparisons, use the [[ ... ]] construct with operators like -eq (equal), -ne (not equal), -gt (greater than), -ge (greater than or equal), -lt (less than), and -le (less than or equal).
 
-For string comparisons, use the [[ ... ]] construct with operators like == (equal), != (not equal), < (less than, lexicographically), and > (greater than, lexicographically). Note that < and > require escaping or using a different context if they are not within [[ ]].
+-For string comparisons, use the [[ ... ]] construct with operators like == (equal), != (not equal), < (less than, lexicographically), and > (greater than, lexicographically). Note that < and > require escaping or using a different context if they are not within [[ ]].
+-String comparisons using == and != are case-sensitive by default.
 
-You can combine multiple comparison conditions using logical operators:
+-You can combine multiple comparison conditions using logical operators:
 && and ||
 and [[ ... ]] vs. [ ... ]:
-The [[ ... ]] construct is generally preferred in modern Bash scripting as it offers more features and better handling of whitespace and word splitting compared to the older [ ... ] (test command).
+-The [[ ... ]] construct is generally preferred in modern Bash scripting as it offers more features and better handling of whitespace and word splitting compared to the older [ ... ] (test command).
+
