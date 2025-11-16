@@ -1,0 +1,6 @@
+git checkout 	-it will switch branches like from main node to branch node amd from branch to master or main node.
+		 But for everytime you need to start or leave the you need to checkout with the branch name first.
+
+git merge branch-the one which you want to merge with the main one.
+
+
