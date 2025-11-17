@@ -71,5 +71,8 @@ FILES		A list of files and directories that are related to the man page
 SEE ALSO	Related information, normally other man page topics
 BUGS		Known bugs in the software
 AUTHOR		Information about who contributed to the development of the topic
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> main
