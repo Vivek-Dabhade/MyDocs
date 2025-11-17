@@ -1,6 +1,8 @@
 For Directories
 Ctrl + Alt + T	-splits dir
 Ctrl+h		-to show the hidden files.
+sudo dpkg -i package name.deb   -can be useful to install .deb files.
+
 
 
 For terminal
@@ -11,7 +13,7 @@ Ctrl+K		-Clear from the cursor to the end of the command line.
 Ctrl+LeftArrow	-Jump to the beginning of the previous word on the command line.
 Ctrl+RightArrow	-Jump to the end of the next word on the command line.
 Ctrl+R		-Search the history list of commands for a pattern.
-xdg-open	-you know
+xdg-open	-you know to open gui mode of file manager.
 cmd1 ; cmd2	-cmd1 output cmd2 output.
 passwd		-to change the password.
 rm -r		-to delete dir with contents.
@@ -35,3 +37,37 @@ man -k cmd	-checks and gives section wise result for the cmds.
 man -K cmd	-it will traverse through each man page of cmd recursively.
 < 1 | 2 >	-if in man page the cmd is separated by pipe(|) then you can use either cmd '1' or cmd '2'.
 [ ]		-the square indicates that the argument is optional
+/find		-the find word will be highlighted throughout the man page.
+N		-Repeat previous search forward in the man page.
+Shift+N		-Repeat previous search backward in the man page.
+export LESS = '-X'	-allows the man page to stay on terminal instead of clearing it on quit the page.(needs to set for every other terminal.
+man 5 crontab	-to access different section of the man page specify the number first.
+D		-Scroll forward one half-screen.
+U		-Scroll backward one half-screen.
+G		-Go to the start of the man page.
+Shift+G		-Go to the end of the man page.
+
+
+Speaking about the sections in man page it is more like a organized set of instructions or cmds according to the user or privilege level.
+
+Section		Content type							Description
+1		User commands						Both executable and shell programs(normal user cmd)	
+2		System calls						Kernel routines that are invoked from user space	
+3		Library functions					Provided by program libraries				
+4		Special files						Such as device files					
+5		File formats						For many configuration files and structures			
+6		Games and screensavers					Historical section for amusing programs			
+7		Conventions, standards, and miscellaneous		Protocols and file systems				
+8		System administration and privileged commands		Maintenance tasks (it contains mainly the admin level cmds and deamon cmds)
+9		Linux kernel API					Internal kernel calls					
+
+Heading				Description
+NAME		Subject name, usually a command or file name, a brief description
+SYNOPSIS	Summary of the command syntax
+DESCRIPTION	Description to provide a basic understanding of the topic
+OPTIONS		Explanation of the command execution options
+EXAMPLES	Examples of how to use the command, function, or file
+FILES		A list of files and directories that are related to the man page
+SEE ALSO	Related information, normally other man page topics
+BUGS		Known bugs in the software
+AUTHOR		Information about who contributed to the development of the topic
