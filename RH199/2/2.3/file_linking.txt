@@ -1,0 +1,23 @@
+processes have pid's i.e. process id 
+users have uid
+groups have gid
+files have index nodes also known as inodes (512 bytes/file using xfs(x-file system) and holds following data
+	-contains ownership
+	-permissions
+	-date and timestamps
+	-paths to data blocks containing file data.
+file allocations table is responsible for keeping the track of inodes to file names. 
+
+
+xfs_info file_path	-provide more info (about what is unknown).
+ls -li	-li stands for long listing
+ln	-used to link  a file to another file in the same dir only. (ln main_file name_file_you_wanna_link_to).
+ln -s 	-to link directories.
+touch file_name	-updates timestamps of the files.
+chmod ugo+rwx [file name]	-to change user permissions of files or dirs u-user, g-group, o-others or directly use a-all then + or - to add or del the permission.
+ls -ldi	-and write name of directories to see permissions.
+mkdir -pv	-p for parent dir and v for verbosity(print messege for each directory.)
+vda 	-acts like disk partition but exact use is unknown to me.
+df 	-list the directories that are on different file systems.
+
+

@@ -1,0 +1,19 @@
+Communication channels
+There are different types of communication channels some of them are:
+0	-std input(stdin)
+1	-std output(stdout)
+2	-std error(stder)
+
+1> or >	-will add or overwrite the data in existing file or even create a file.
+>>	-will append new data to the file.
+2>	-'2' represents the communication channel here which is for error.
+so for eg: cmd > success 2>failure <- this respresents that if succes save it to success and if error occurs then those msgs save it to failure.
+&>	-will append both stdout and err in same file
+hostnamectl status 	-will give you the system properties.
+cat > my_file << EOF	-will allow you to write to write multipe lines until you write EOF on new line. try to understand the use of "<<" which specifies input redirection:. 
+tee			-it will print the output of first cmd before giving to next cmd as input (jaise pipe wala T).
+
+
+
+echo -e -'-e' is used to add '\n' i.e. new line to the text
+

@@ -1,0 +1,3 @@
+systemctl start cockpit.socket	-starts cockpit service which can generate diagnoistic report.
+systemctl status cockpit.socket -to check status
+

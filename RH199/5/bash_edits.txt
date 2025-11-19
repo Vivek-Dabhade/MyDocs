@@ -1,0 +1,3 @@
+.bashrc file edits
+PS1='[\u@\h \t \w]]'
+used to change the cmd prompt format from [student@servera ~]$ to [student@servera 14:45:05 ~]$ where u=user, h=server, t=time, w=dir

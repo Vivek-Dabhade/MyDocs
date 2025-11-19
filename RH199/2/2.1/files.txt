@@ -1,0 +1,22 @@
+/boot		-Files to start boot process.
+/dev		-Special device files that system uses to access hardware.
+/dev/null	-it is like a blackhole i.e. nothing can be retrived from it. 
+/etc 		-System-specific configuration files. (etc= extended text configuration.)
+/etc/profile	-is for all shells and all users and it is only accessible by privilege user like root user.(need more data to understand)
+~/.profile	-now is the file that can be created by the normal user.
+/etc/bashrc	-login shell for all shells and all users.
+/.bashrc	-login script for bash (user specific). (need more data to understand)
+/home		-Home directory when regular users store their data.
+/root		-home directory for adminstrative super user.
+/run 		-Runtime data for processes that started since the last boot. This data includes process ID files and lock files. The contents of this directory are re-created on reboot. 
+	 This directory consolidates the /var/run and /var/lock directories from earlier versions of Red Hat Enterprise Linux.
+/tmp 		-location for temporary files which if not accessed for 10 days are deleted automatically and same goes for /var/tmp but the time limit is of 30 days.
+/usr		-contains some user resources.
+/usr/bin	-binary executables 
+/usr/sbin	-system binary files.
+/usr/lib	-is for 32bit library and same goes for lib 64.
+/var		-system-specific variable data should persist between boots. Files that dynamically change, such as databases,cache directories, log files, printer-spooled docs, and web contents 		
+	 might be found  in /var.
+	 
+	 
+Double Tab	-With tab completion, users can quickly complete commands or file names after typing enough at the prompt to make it unique. If the typed characters are not unique, then pressing the Tab key twice displays all commands that begin with the typed characters.

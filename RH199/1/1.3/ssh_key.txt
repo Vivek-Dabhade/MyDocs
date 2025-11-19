@@ -1,0 +1,29 @@
+
+**bind -P			-to find out the hotkeys(shortcut-keys) for the terminal.**
+ctrl+d				-to logout of any server.
+ssh-copy-id			-copies your public id to the server
+ssh-keygen			-generates public/private key for the system and it will be generated with 2 extensions ('' and '.pub') (asymmetric key generation.)
+ssh-keygen -f ~/.ssh/key	-f option specifies the file option to save the key in.
+ssh-keygen -N 'your_password' -f ~/.ssh/key_name	-'-N' stands for new paraphrase.
+ssh user_name@server		-to shift between the servers and enter 'exit' to quit server.
+ssh -i .ssh/key-with-pass user@remotehost		-The -i option in the ssh command is used to specify a private key file for authentication instead of the default SSH key (~/.ssh/id_rsa).
+ssh-copy-id -i .ssh/key-with-pass.pub user@hostname	-copies pub id to the remote server
+ssh-keygen -i -f input_key	-'i' Converts an SSH key from another format into OpenSSH format.
+		Tidbit-It cannot export OpenSSH keys to another format (for that, use '-e' instead).
+eval $(ssh-agent) 		-When you manually start the ssh-agent command, it runs additional shell commands to set environment variables that are needed for use with the ssh-add command.
+ssh-add				-add the private keys from the default ~/.ssh/id_rsa file and then from a ~/.ssh/key-with-pass file.
+ssh user@remotehost		-uses defaut private key to access your account on remote sever.
+w --from			-session list running on the server.
+ssh -v user@hostname		-provides with 3 verbosity info(-v -vv -vvv)(no other info)
+useradd -G wheel 'user_name'	-adding user to server
+echo 'your_password' | passwd --stdin 'user_name'	-adding password to the user or leave empty for no password.(re-enter the command if you want to change the password.)
+ls -lah ~/.ssh/			-key locations
+systemctl restart sshd		-to restart the ssh daemon 
+
+
+
+
+user@remotehost → Specifies the username and remote server address
+
+
+Session remains to complete

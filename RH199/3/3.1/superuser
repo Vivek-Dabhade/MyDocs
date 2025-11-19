@@ -1,0 +1,93 @@
+uid is user id then gid is group id whenever the user is created the private group is named after it's user name in which only the user is present for now.
+Then the privilage level is set same as the user id . The user with zero as user id is the most privilage user.
+Then again the groups are the supplementry that the user is in.
+
+Commands :
+id 		-will display the root user.
+id user_name	-will display parameters for that user.
+	‘-g’: Prints only the effective group ID of the user.
+	‘-G’: Prints all group IDs associated with the user.
+	‘-n’: Displays names instead of numeric IDs.
+	‘-r’: Shows the real ID instead of the effective one.
+	‘-u’: Prints only the effective user ID.
+
+whoami		-will print current user.
+id 		-gives more information on user.
+su - user_name	-starts a login shell for devops user(su stands for superuser. and sudo for superuser do)
+top 		-will display all processes and with the cpu and memory usage for process.
+ps 		-will show limited parameters of top.
+ps -au		-will display all users and commands running.
+grep pattern location	-like ctrl+f cmd it will search for a particular pattern in given dir or file.(it is a ':' delimited file).
+grep ^[^#] location	-will give you all contents of the file expect the whole line containing '#' at the start of the file.
+	the 'x' stored in here displays password which was previously used to be stored their but now it is a placeholder.(the below patterns occurs for /etc/passwd file only)
+	student:x:1000:1000:Student User:/home/student:/bin/bash    ->user_name:password:uid:gid:description of user_name:path to user's home dir:user shell
+		normal user's are stored in /home/user and root user are stored in /root/user
+		and the shell provided is /bin/bash.
+
+ADDING A USER:
+sudo useradd -m newuser	-creates new user with home dir /home/newsuer. or (sudo adduser user_name)
+sudo passwd newsuer	-sets or updates password for the user.
+cat /etc/passwd | grep newuser	-check if the user exists.
+sudo userdel -r newsuer	- deletes the user.
+
+
+Diff Bet "su -i" and sudo:
+"su -i"(switch user) switches to another user account(default root user) while sudo runs a single command with elevated privilages.Use su for long run with other user, other than current one and uses sudo when you have only few cmds to run with other user privileges.
+
+ 
+Cmd:ps Desc
+	user	-owner of the process
+	pid	-process id
+	%CPU	-cpu usage by that process
+	%MEM	-memory used by the process
+	VSZ	-Virtual memory used
+	RSS	-Physical memory used
+	TTY	-terminal associated(TeleTypewriter) or the terminal from which the process wa initiated.
+		pts/N	-(psuedo terminal slave)(N stands as a no.) a user started process from terminal like SSH,GNOME.
+		ttyn	-(physical terminal(n stands as a no.)) system started by actual physical console like tty1,tty2,etc
+		?	-no terminal associated it is a daemon process or GUI application.
+	STAT	-process state.
+	START	-start time of the process.
+	TIME	-cpu time used.
+	COMMAND	-comand started the process.
+
+Use case:
+ps aux 			-view all running process by the user.
+ps aux --sort=%men	-sort by mem usage.
+ps aux --sort=%cpu	-sort by cpu usage.
+
+What is a user?
+A user account provides security boundaries between people and programs that can run commands.
+
+What Is a Group?
+A group is a collection of users that need to share access to files and other system resources. Groups can grant access to files to a set of users instead of to a single user. 
+
+
+EXTRA:
+sudo usermod [options] username	
+	options:Flags to modify user properties.
+	username:the user account to modify.
+
+OPTIONS:
+-aG	-adds user to supplementary group	-sudo usermod -aG user1 user2(adds user2 to user1 group)(2nd 1st ka grp member hai)(now using only -G will replace the supplementary grp and -a will  
+-d	-change home dir			-sudo usermod -d /home/newhome user2
+-l	-change username			-sudo usermod -l newuser user1 
+-s	-change default shell			-sudo usermod -s /bin/zsh user1
+-c	-add a comment				-sudo usermod -c "New comment" user1
+-L 	lock user account			-sudo usermod -L user1
+-U	unlock user account			-sudo usermod -U user1
+
+
+Cmd:top Desc
+PID.	 -The process ID.
+USER.	 -The user account that started the process.
+PR.	 -Process priority.
+NI.	 -Nice value, affecting scheduling priority.
+VIRT.	 -Total virtual memory the process uses.
+RES.	 -Resident memory (actual physical memory in use).
+SHR.	 -Shared memory used by the process.
+S.	 -Process state (e.g., S for sleeping, R for running).
+%CPU 	 -Percentage of CPU time used by the process.
+%MEM. 	 -Percentage of RAM used by the process.
+TIME+ 	 -Total CPU time the process has consumed.
+COMMAND. -The program, service, or command responsible for each active process.

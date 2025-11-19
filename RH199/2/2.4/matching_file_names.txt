@@ -1,0 +1,41 @@
+tree -F dir_name	-will generate tree structure for the file.
+tree -L (no) /		-going one further down the hierarchy replace (no) with 1,2,3.
+mkdir {a,b,c}		-to create n dirs
+mkdir {1..10}		-will create dirs from 1 to 10 nos.
+touch {a,b,c}		-to create n files.
+rename wrong right *	-to rename a file also the extenions and * represents to all files in dir.
+f* *f *f* [!f]*		-starting with letter 'f' , ending with 'f', containing 'f', does not contain 'f'.
+f????			-can be used if the word size is known or it will load any word with five letters starting with 'f'(best for searching).
+VARIABLE=value		-it is considered that the variable should be in caps but you can decide weather to make it cap or small and value is the value you decide.
+${variable1}_${var2}	-variables are displayed using $ symbol and if u want to add something then you need to add curly braces.
+$(cmd)			-() is useful to execute the cmd.
+/$VARIABLE 		-skips the refrencing and prints the word as it is.
+cd -			-to return to previous directory (like your last dir).
+
+
+table to search for a file
+*		-for all
+?		-for single character
+[abc..]*	-Any one character in the enclosed class (between the square brackets)
+[!abc…]*	-Any one character not in the enclosed class
+[^abc…]*	-Any one character not in the enclosed class
+[[:alpha:]]*	-Any alphabetic character
+[[:lower:]]*	-Any lowercase character in the beginning
+[[:upper:]]*	-Any uppercase character in the beginning
+[[:alnum:]]*	-Any alphabetic character or digit
+[[:punct:]]*	-Any printable character that is not a space or alphanumeric
+[[:digit:]]*	-Any single digit from 0 to 9
+[[:space:]]*	-Any single white space character, which might include tabs, newlines, carriage returns, form feeds, or spaces.
+
+
+table for date and time
+date 		-to display the current time and date.
+$(date +%A)	-Day of week
+%M		-running minutes
+%l		-hours right now
+%p		-am or pm
+%F		-current date in yyyy-mm-dd format.
+%s		-
+%R		-shows time in 24 hr format
+%x		-shows date in mm/dd/yyyy format.
+
