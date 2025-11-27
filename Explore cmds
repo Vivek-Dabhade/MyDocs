@@ -1,0 +1,5 @@
+lsusb
+dpkg
+tlp
+tlp --prune
+powerstat
