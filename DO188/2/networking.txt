@@ -1,0 +1,8 @@
+whatever pods you create they are somehow attached to podman bridge but it does not have DNS resolution name service.
+
+
+podman network create 'name'	-will create new network. 
+podman network ls	-will list all the available network
+podman network inspect 'nameOfBridge'	-will provide details about that bridge in json format.
+podman run --rm	-will remove the conatiner as soon as you stop the container.
+podman exec 
