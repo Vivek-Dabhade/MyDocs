@@ -1,10 +1,29 @@
 whatever pods you create they are somehow attached to podman bridge but it does not have DNS resolution name service.
 
 
-podman network create 'name'	-will create new network. 
-podman network ls	-will list all the available network
-podman network inspect 'nameOfBridge'	-will provide details about that bridge in json format.
-podman run -d --name 'name' --net 'attached network' -p 8080:8081 quay 	-'-d' for detached mode or bg mode '--net' is for to attached network port forwarding taking from 8080 and forwarding to 8081 and last is for registry.
+podman network create 'name'    -will create new network. 
+podman network ls   -will list all the available network
+podman network inspect 'nameOfBridge'   -will provide details about that bridge in json format.
+podman run -d --name 'name' --net 'attached network' -p 8080:8081 quay  -'-d' for detached mode or bg mode '--net' is for to attached network port forwarding taking from 8080 and forwarding to 8081 and last is for registry. (-p host_port:container_port)
+port forwarding/mapping is a case in which like above case if website is host it will be visible only to host but to be accessible by others port forwarding is done so end user can access at 8080 and only host can access at 8081. To access any website from the host we can use 172.xxx.xx.xx ip but from external access we have to use 192.xxx.xx.xx ip.
 
-podman run --rm	-will remove the conatiner as soon as you stop the container.
-podman exec 
+docker inspect container-name/id -will give details about a particular container.
+docker container ls -will give you list of running conatiners.
+docker container ls -q -will give only id of running containers.
+docker container ls --format "{{.Repository}}" -will provide only the repositories of the running container  not only that but 
+        Tag: {{.Tag}}
+        Image ID: {{.ID}}
+        Size: {{.Size}}
+        Status:{{.Status}}
+        Creation Time: {{.CreatedAt}} to sort or use for desired ouput.
+docker images --filter key:reference -this cmd requires key reference pair search for docker documentations for that.
+docker rmi $(docker images name/id)
+docker port name/id -will list only port data.
+docker inspect id -will give more info on the container.
+docker inspect --format "{{.json .NetworkSettings.Ports}}" container-name/id -as the file is json so .json and will provide only the required section info instead of the whole json file.
+
+podman run --rm -will remove the conatiner as soon as you stop the container.
+podman exec
+
+
+combining the two or more cmds can give better results.

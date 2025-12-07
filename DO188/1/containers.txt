@@ -1,21 +1,27 @@
-podman images		-will give the list of images.
-podman ps		-will provie list of running processes.
-podman run repo		-will run a particular image in foreground.
-podman rmi id		-will remove image with assigned id
-podman run -d 		-will run in bg instead of foreground(-d often known as detach mode)
-podman run -e 		-can pass enviornment variables in the image(every time flag '-e' must be inserted for every variable).
-podman run -p		-will run on specified port.(8888:8889 now here one of them is assigned as port of node.)
-podman start 'name'	-will restart the container. 
-podman run --name 'name'	-will assign name to the image.
-podman ps --format='json'	-will give result in queried format.
-podman stop 'name,id'		-will stop the conatiner but it is present still to remove it completely use podman rm 'name,id'.
-podman rm 'name,id'		-will remove the container.
-podman run --rm		 	-will remove the conatiner as soon as you stop the container.
-podman-desktop	-will run podman desktop 
-podman-desktop &-will run podman desktop in detach mode.
-podman run --rm	-will remove the conatiner as soon as you stop the container.
-podman exec -it 'name,id' 'cmd'	-will execute and give you a interactive terminal for that named container.
+------All the podman cmds are applied to docker just replace podman with docker.------
 
+podman images       -will give the list of images.
+podman ps       -will provie list of running processes.
+podman run repo     -will run a particular image in foreground.
+podman rmi id       -will remove image with assigned id
+podman run -d       -will run in bg instead of foreground(-d often known as detach mode)
+podman run -e       -can pass enviornment variables in the image(every time flag '-e' must be inserted for every variable).
+podman run -p       -will run on specified port.(8888:8889 now here one of them is assigned as port of node.)
+podman start 'name' -will restart the container. 
+podman run --name 'name'    -will assign name to the image.
+podman ps --format='json'   -will give result in queried format.
+podman stop 'name/id'       -will stop the conatiner but it is present still to remove it completely use podman rm 'name/id'.
+podman rm 'name/id'     -will remove the container.
+podman run --rm         -will remove the conatiner as soon as you stop the container.
+podman-desktop  -will run podman desktop 
+podman-desktop &-will run podman desktop in detach mode.
+podman run --rm -will remove the conatiner as soon as you stop the container.
+podman exec -it 'name/id' 'cmd' -will execute and give you a interactive terminal for that named container.
+
+
+docker container ls -will give list of all running containers.
+docker stop $(docker --format "{{.ID}}" -q)- will stop all the running conatiners. .ID will list id's and replace .ID with .Tag >Repository .Size .CreatedAt for desired output. Combining can prove powerful cmds skipping multi-step cmds.
+docker cmd --filter key:value -filter-out desired output according to need and for key:value pair refer to docker docs.
 
 note:: when using podman run at least one container must be included in the cmd.And everytime you try to run the container you need to specify the image.
 
