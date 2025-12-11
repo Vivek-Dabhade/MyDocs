@@ -1,8 +1,9 @@
-[For more info follow this documentation.](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) 
+[For more info follow this documentation.](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
-```Python  
+```Python
 print("Hello world.")
 ```
+
 > [!NOTE]
 > This is important note.
 
@@ -18,11 +19,12 @@ print("Hello world.")
 > [!CAUTION]
 > this is last caution.
 
-#####For instering flowcharts.  
-****
+### For instering flowcharts.
 
-```mermaid    
-flowchart LR  
+---
+
+```mermaid
+flowchart LR
   one --> two
 ```
 
