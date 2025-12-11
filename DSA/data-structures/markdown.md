@@ -25,6 +25,8 @@ print("Hello world.")
 
 ---
 
+[For more diagrams checkout this documentation by mermaid.](https://mermaid.js.org/syntax/flowchart.html#a-node-default)
+
 ```mermaid
 flowchart LR
   one --> two
