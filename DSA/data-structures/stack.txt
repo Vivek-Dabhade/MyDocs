@@ -1,0 +1,2 @@
+Stack is a data-type which works on LIFO(Last in first out) principal.Think it as a layer of tiffin which is settled one upon another.
+Now if you need the last tiffin you need to remove the top most layer then the second top untill you reach your target point.

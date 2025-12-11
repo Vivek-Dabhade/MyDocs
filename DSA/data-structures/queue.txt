@@ -1,0 +1,2 @@
+Queue is a data-structure which works on FIFO(First in first out) principal. 
+Think it like a pipe of water the amt of water entered from the tap or source will come out at the other end first.

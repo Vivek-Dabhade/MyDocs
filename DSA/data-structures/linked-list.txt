@@ -1,0 +1,2 @@
+Linked-list is a data-structure where the node holds a certain value as well as the address of the next node just like a chain you know where to search for the next item.
+Also it's first and last node are empty they do not store address of any element.
