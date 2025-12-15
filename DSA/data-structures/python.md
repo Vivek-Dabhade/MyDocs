@@ -15,8 +15,12 @@ flowchart LR
 
 ```
 
-> ![NOTE]
-> Now if you want to see the compiled code then run `python3 -m py-compile file.py`.
+> [!NOTE]
+> Now if you want to see the compiled code then run
+>
+> ```shell
+> python3 -m py-compile file.py
+> ```
 
 > If you ever want to get the memory address of an object then you can use id() function.  
 > In python if a=10 and b=10 then memory address of both the variables will be same because they have same literals and same is true for strings.
@@ -24,19 +28,20 @@ flowchart LR
 ### General purpose functions
 
 These functions will work for numbers but for string they work in the following ways:  
-|Funtion|Description|
-| ----- | --------- |
-|max()|will also work for string and sort it lexicographically.|
-|min()|same as above.|
-|sum()| will not work for strings.|
-|reverse()|will reverse the order in a way it was inserted.|
-|sort()|same as above.|
-|update()|will update with certain values.|
-|clear()|will clear out all elements but the structure(Eg-list or set) will remain as it is.|
-|del()|it does not accept literal instead it asks for variable and delete it entirely even structures.|
-|count()|will give the count of elements|
-|len()|will give the length of elements|
-|var[a:b]|will always slice elements where a is inclusive and b is exclusive.|
+|Funtion |Description|
+| --------- | --------- |
+|max() |will also work for string and sort it lexicographically.|
+|min() |same as above.|
+|sum() | will not work for strings.|
+|reverse() |will reverse the order in a way it was inserted.|
+|sort() |same as above.|
+|update() |will update with certain values.|
+|clear() |will clear out all elements but the structure(Eg-list or set) will remain as it is.|
+|pop() |will removoe the last inserted item.|
+|del() |it does not accept literal instead it asks for index, variable and delete it entirely even structures.|
+|count() |will give the count of elements|
+|len() |will give the length of elements|
+|var[a:b] |will always slice elements where a is inclusive and b is exclusive.|
 
 ### LIST
 
@@ -71,15 +76,17 @@ list.del[0:2]       #will delete elements within the provided range **remember 0
 
 Tuples are faster and also memory efficient than lists.
 
-> ![NOTE]
+> [!NOTE]
 > To create a single tuple we must place at least 1 comma(,) then and then only the tuple can be craeted.
 
 As the tuples are immutable anything that modifies the elements will throw an error like sort(),reverse(),insert(),etc otherwise same as list.
 
-> ![CAUTION]
+> [!CAUTION]
 > Tuples can also be created with a single element, but it is a bit tricky. Having one element in the parentheses is not sufficient, there must be a trailing ‘comma’ to make it a tuple.
 
 ### Sets
+
+---
 
 Set is a collection of distinct items. They are unordered hence they can't be accessed. Uses hashing internally and faster in set operations.
 
@@ -96,9 +103,31 @@ s.remove(element)       #will raise an error if element is not present.
 
 ```
 
-> ![CAUTION]
+### Dictionary
+
+---
+
+- Dictionary is a collection of key:value pair.
+- Dictionary follows most of the properties of set even they do use hashing internally.
+- The keys must be distinct but the values can be repeated.
+
+```python
+- Adding key:value to the dictionary
+d={}
+d['laptop']=80000       #so here laptop is the key and 80k is the value and if already exixts in dict then will update the value.
+
+-Accessing the values
+d[key]                  #will result the value and if not present will raise an error.
+d.get(key)              #will result the value and if not present then will return None.
+d.get(key,"NA")         #if available then print if not return NA. like if else loop.
+
+
+
+```
+
+> [!CAUTION]
 > s={} will not create an empty set it will create an empty dictionary.
 > s=set() is the correct to create an empty set.
 
-> ![NOTE]
+> [!NOTE]
 > In Python whenever you take a input in list it stores as string by default and also seperate as as an individual number. Eg-25->'2','5'.
