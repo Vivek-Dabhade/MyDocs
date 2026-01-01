@@ -35,3 +35,14 @@ flowchart LR
 ```shell
 echo hello world
 ```
+
+### To colour the text (from Latex colored math symbol.)
+
+$\color{red}\text{This is red text}$  
+$\color{blue}\text{This is blue text}$  
+$\color{green}\text{This is green text}$  
+$\color{purple}\text{This is purple text}$  
+
+### Dynamoic writing urls
+    [](https://readme-typing-svg.herokuapp.com/demo/)
+    [](https://github.com/DenverCoder1/readme-typing-svg?tab=readme-ov-file)
