@@ -130,4 +130,5 @@ d.get(key,"NA")         #if available then print if not return NA. like if else 
 > s=set() is the correct to create an empty set.
 
 > [!NOTE]
-> In Python whenever you take a input in list it stores as string by default and also seperate as as an individual number. Eg-25->'2','5'.
+> In Python whenever you take a input in list it stores as string by default and also seperate as as an individual number.  
+> Eg-25->'2','5'.
