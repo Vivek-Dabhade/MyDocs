@@ -44,5 +44,21 @@ $\color{green}\text{This is green text}$
 $\color{purple}\text{This is purple text}$  
 
 ### Dynamoic writing urls
-    [](https://readme-typing-svg.herokuapp.com/demo/)
-    [](https://github.com/DenverCoder1/readme-typing-svg?tab=readme-ov-file)
+    [](https://readme-typing-svg.herokuapp.com/demo/)  
+    [](https://github.com/DenverCoder1/readme-typing-svg?tab=readme-ov-file)  
+
+### Task List
+- [x] this is a complete item   
+- [ ] this is an incomplete item  
+
+### Creating a table
+First Header | Second Header 
+ ------------ | ------------- 
+Content from cell 1 | Content from cell 2 
+Content in the first column | content in the second column 
+
+### Mathematical Expressions
+$$\sqrt{3}+1$$  
+(https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)  
+
+
